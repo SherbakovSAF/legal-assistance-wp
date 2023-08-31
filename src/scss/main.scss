@@ -1,11 +1,12 @@
 @import './variables';
 
-// Component
-@import './components/logoBlock';
-@import './components/ui';
+
 
 // Blocks
 @import './blocks/header.scss';
+
+// Component
+@import './components/ui.scss';
 
 // Adaptive
 @import './a-main.scss';
@@ -38,11 +39,13 @@ ul {
 // -------------------
 
 body{
+     padding-top: 48px;
+     margin: 0;
      font-family: 'Gotham Pro';
      font-size: 14px;
      // line-height: 21px;
      font-weight: 400;
-     background-color: #F4F7FA;
+     background-color: $body-color;
 
      *{
           box-sizing: border-box;
@@ -51,72 +54,72 @@ body{
      }
 }
 
-.text-description_color-dark{
-     color: $text-grey-dark;
-}
+// .text-description_color-dark{
+//      color: $text-grey-dark;
+// }
  
-.text-description_list{
-     font-size: 16px;
-     line-height: 24px;
-}
+// .text-description_list{
+//      font-size: 16px;
+//      line-height: 24px;
+// }
 
-.text-nav{
-     color: black;
-     font-size: 16px;
-     letter-spacing: 0.48px;
-}
+// .text-nav{
+//      color: black;
+//      font-size: 16px;
+//      letter-spacing: 0.48px;
+// }
 
-.text-header{
-     color: #262626;
-     font-size: 48px;
-     font-weight: 700;
-     line-height: 114.5%
-}
+// .text-header{
+//      color: #262626;
+//      font-size: 48px;
+//      font-weight: 700;
+//      line-height: 114.5%
+// }
 
-.text-header-list{
-     color: $text-grey-dark;
-     font-size: 16px;
-     line-height: 162.5%;
-}
+// .text-header-list{
+//      color: $text-grey-dark;
+//      font-size: 16px;
+//      line-height: 162.5%;
+// }
 
-.text-header-section-title{
-     color: $text-grey-dark;
-     font-size: 32px;
-     font-weight: 700;
-     line-height: 137.5%;
-}
+// .text-header-section-title{
+//      color: $text-grey-dark;
+//      font-size: 32px;
+//      font-weight: 700;
+//      line-height: 137.5%;
+// }
 
-.tarifi-title {
-     color: #2741D0;
-     font-size: 16px;
-     font-weight: 700;
-     line-height: 187.5%;
-     letter-spacing: 2.4px;
-     text-transform: uppercase;
-}
+// .tarifi-title {
+//      color: #2741D0;
+//      font-size: 16px;
+//      font-weight: 700;
+//      line-height: 187.5%;
+//      letter-spacing: 2.4px;
+//      text-transform: uppercase;
+// }
 
-.tarifi-title-description {
-     color: #737373;
-     color: #404040;
-     font-family: Gotham Pro;
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: 30px; /* 187.5% */
-}
+// .tarifi-title-description {
+//      color: #737373;
+//      color: #404040;
+//      font-family: Gotham Pro;
+//      font-size: 16px;
+//      font-style: normal;
+//      font-weight: 700;
+//      line-height: 30px; /* 187.5% */
+// }
 
-// YНачало
-.text-phone {
-     color: $text-grey-dark;
-     font-size: 16px;
-     font-weight: 700 ;
-}
+// // YНачало
+// .text-phone {
+//      color: $text-grey-dark;
+//      font-size: 16px;
+//      font-weight: 700 ;
+// }
 
-.text-header-subblock-list{
-     color: $text-grey-dark;
-     font-size: 16px;
-     font-weight: 700;
-}
+// .text-header-subblock-list{
+//      color: $text-grey-dark;
+//      font-size: 16px;
+//      font-weight: 700;
+// }
 // Конец
 
 

@@ -1,7 +1,10 @@
+@import './logoBlock';
+@import './header-pic';
+
 .btn {
      display: inline-block;
      border-radius: 15px;
-     background: $mainColor;
+     background: $main-color;
      color: white;
      font-weight: 600;
      font-size: 16px;

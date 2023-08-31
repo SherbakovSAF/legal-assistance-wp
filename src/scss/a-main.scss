@@ -1,10 +1,15 @@
-@media (max-width: 850px) {
+@media (max-width: 770px) {
+
+     body{
+          padding: 20px 15px;
+     }
      @import './adaptive/850px/logoBlock';
      @import './adaptive/850px/header';
      @import './adaptive/850px/header-information';
      @import './adaptive/850px/header-information-nav';
      @import './adaptive/850px/header-title';
      @import './adaptive/850px/header-advantages';
+     @import './adaptive/850px/header-pic';
      
 
 }
