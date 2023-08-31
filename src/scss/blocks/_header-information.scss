@@ -7,23 +7,14 @@
      .header-information__connect{
           justify-self: end;
 
-          .header-information__connect__phone-icon {
-               display: none;
-
-               width: 50px;
-               height: 50px;
-               
-               border-radius: 7px;
-               background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
-               div{
-                    display: flex;
-                    align-items: center;
+          .header-information_connect-icon {
+               background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);     
+               div {
                     justify-content: center;
-                    height: 100%;
-                    width: 100%;
+                    align-items: center;
                     svg {
-                         width: 50%;
-                         height: 50%;
+                         width: 100%;
+                         height: 100%;
                          fill: white;
                     }
                }

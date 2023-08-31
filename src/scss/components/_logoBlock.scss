@@ -24,18 +24,3 @@
           margin-left: 62px;
      }
 }
-
-@media (max-width:850px) {
-     .logo-block-wrap{
-          svg {
-               width: 39px;
-               height: 30px;
-          }
-          abbr {
-               font-size: 10px;
-          }
-          p {
-               display: none;
-          }
-     }
-}

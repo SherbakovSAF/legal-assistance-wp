@@ -6,40 +6,24 @@
           display: none;
      }
 
-     label {
-          cursor: pointer;
-          display: none;
-          align-items: center;
-          justify-content: center;
-
-          margin-left: auto;
-          
-          border-radius: 7px;
-          background: #DEE6EF;
-
-          width: 50px;
-          height: 50px;
-
-          div {
-               width: 49%;
-               height: 40%;
-               display: flex;
-               flex-direction: column;
-               justify-content: space-between;
-               span{
-                    display: block;
-                    background-color: #4614E8;
-                    border-radius: 1em;
-                    height: 3px;
-                    width: 100%;
-               }
-          }
-          
+     .header-information_connect-icon {
+          background: #DEE6EF;     
+               div {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    span{
+                         display: block;
+                         background-color: #4614E8;
+                         border-radius: 1em;
+                         height: 3px;
+                         width: 100%;
+                    }
+               }     
+               
      }
      
      ul {
           display: flex;
-          font-size: 16px;
           
           list-style:  {
                cursor: pointer;
