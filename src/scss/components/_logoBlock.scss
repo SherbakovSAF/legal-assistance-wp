@@ -1,0 +1,41 @@
+.logo-block-wrap{
+     display: flex;
+     align-items: center;
+     svg {
+          fill: #3B1D8F;
+          width: 87px;
+          height: 63px;
+     }
+
+     abbr {
+          color: #3B1D8F;
+          font-family: 'Roboto';
+          line-height: 118.75%;
+          margin-left: 22.5px;
+     }
+
+     p {
+          color: $text-grey-dark;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 166.6%;
+          width: 227px;
+          margin-left: 62px;
+     }
+}
+
+@media (max-width:850px) {
+     .logo-block-wrap{
+          svg {
+               width: 39px;
+               height: 30px;
+          }
+          abbr {
+               font-size: 10px;
+          }
+          p {
+               display: none;
+          }
+     }
+}

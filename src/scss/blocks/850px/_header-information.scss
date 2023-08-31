@@ -1,0 +1,17 @@
+.header-information{
+     grid-template-columns: repeat(3, auto);
+     grid-template-rows: repeat(1, 1fr);    
+     .header-information__connect{
+
+
+          .header-information__connect__phone-icon {
+               display: block;
+               margin-right: 8px;
+          }
+          .header-information__connect__group{
+               display: none;
+               
+          }
+     }
+}
+

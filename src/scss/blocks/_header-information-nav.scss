@@ -1,0 +1,57 @@
+.header-information_nav {
+     grid-column-start: 1;
+     grid-column-end: 3;
+
+     input {
+          display: none;
+     }
+
+     label {
+          cursor: pointer;
+          display: none;
+          align-items: center;
+          justify-content: center;
+
+          margin-left: auto;
+          
+          border-radius: 7px;
+          background: #DEE6EF;
+
+          width: 50px;
+          height: 50px;
+
+          div {
+               width: 49%;
+               height: 40%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               span{
+                    display: block;
+                    background-color: #4614E8;
+                    border-radius: 1em;
+                    height: 3px;
+                    width: 100%;
+               }
+          }
+          
+     }
+     
+     ul {
+          display: flex;
+          font-size: 16px;
+          
+          list-style:  {
+               cursor: pointer;
+          };
+
+          :not(:last-child){
+               margin-right: 48px;
+          }
+          
+          #login-nav-btn{
+               display: none;
+          }
+     }
+}
+
