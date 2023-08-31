@@ -1,0 +1,31 @@
+.header-advantages{
+     max-width: 100%;
+     // margin-left: auto;
+
+     margin-top: 16px;
+     // border-radius: 10px;
+     // background: #F4F7FA;
+     // box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+     
+     .header-advantages__wrap{
+          padding: 34px 32px;
+     //      display: flex;
+     flex-direction: column;
+          dl{
+     //           display: flex;
+               align-items: center;
+
+               &:not(:last-child){
+                    margin-bottom: 24px;
+               }
+               dt{
+                    margin-bottom: 16px;
+               }
+          }
+          dd{
+               font-size: 14px;
+               text-align: center;
+          }
+     }
+     
+}
