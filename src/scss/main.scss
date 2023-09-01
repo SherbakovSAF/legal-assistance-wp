@@ -1,27 +1,6 @@
+
+
 @import './variables';
-
-
-
-// Blocks
-@import './blocks/header.scss';
-
-// Component
-@import './components/ui.scss';
-
-// Adaptive
-@import './a-main.scss';
-
-@mixin container($size) {
-     max-width: $size;
-     margin: 0 auto
-}
-
-// Main Style
-.large-container {
-     @include container($size: 1280px)
-}
-
-
 
 // ----- Сброс
 a{
@@ -53,6 +32,35 @@ body{
           padding: 0;
      }
 }
+
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+
+
+// Component
+@import './components/ui.scss';
+
+// Adaptive
+@import './a-main.scss';
+
+@mixin container($size) {
+     max-width: $size;
+     margin: 0 auto
+}
+
+// Main Style
+.large-container {
+     @include container($size: 1280px)
+}
+
+.small-container {
+     @include container($size: 1060px)
+}
+
+
+
+
 
 // .text-description_color-dark{
 //      color: $text-grey-dark;

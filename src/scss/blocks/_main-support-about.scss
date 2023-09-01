@@ -1,0 +1,103 @@
+
+.support-about{
+     position: relative;
+     display: flex;
+     align-items: center;
+     .support-about-title{
+          max-width: 406px;
+          h2{
+               margin-top: 16px;
+               margin-bottom: 32px;
+          }
+     }
+     .support-about-stats{
+          position: relative;
+          margin-left: 147px;
+          .support-about-stats-text{
+               display: grid;
+               grid-template-columns: repeat(2, auto);
+               grid-template-rows: repeat(2, auto);
+               grid-column-gap: 25px;
+               grid-row-gap: 17px;
+               dl{
+                    border-radius: 10px;
+                    background: linear-gradient(236deg, #FFF 29.99%, #F4F9FF 79.17%);
+                    box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    dt{
+                         color: transparent;    
+                         -webkit-background-clip: text;
+                         background-clip: text;
+                         background-image: linear-gradient(180deg, #4614E8,  #BCA7FF);
+                         margin-bottom: 15px;
+                    }
+
+                    dd{
+                         color: #404040;
+                    }
+                    
+                    &:nth-child(odd){
+                         padding: 32px;
+                    }
+                    &:nth-child(even){
+                         padding: 24px;
+                    }
+                    &:nth-child(1){
+                         justify-self: end;
+                         width: 230px;
+                         dt{
+                              font-size: 48px;
+                              font-weight: 700;
+                              span{
+                                   font-size: 16px;
+                              }
+                         }
+                    }
+                    &:nth-child(2){
+                         justify-self: start;
+                         width: 179px;
+                         dt{
+                              font-size: 36px;
+                              font-weight: 700;
+                              span{
+                                   font-size: 16px;
+                              }
+                         }
+                    }
+                    &:nth-child(3){
+                         justify-self: end;
+                         width: 179px;
+                         dt{
+                              font-size: 36px;
+                              font-weight: 700;
+                         }
+                    }
+                    &:nth-child(4){
+                         justify-self: start;
+                         width: 192px;
+                         dt{
+                              font-size: 16px;
+                              letter-spacing: 2.72px;
+                         }
+                    }
+                    
+               }
+          
+          }
+          .support-about-stats-img{
+               position: absolute;
+               top: -10%;
+               left: 7.5%;
+               z-index: -1;
+               svg{
+
+                    width: 528px;
+                    height: 271px;
+                    
+               }
+          }
+     }
+}
