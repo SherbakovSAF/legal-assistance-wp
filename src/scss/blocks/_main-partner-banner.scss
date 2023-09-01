@@ -1,0 +1,32 @@
+.partner-banner{
+     background-color: #273895;
+     z-index: -2;
+     position: relative;
+     height: 398px;
+     .partner-banner_text-wrap{
+          
+          .partner-banner_text{
+               padding-top: 88px;
+               h2{
+                    margin-bottom: 16px;
+               }
+               p{
+                    max-width: 321px;
+               }
+          }
+          svg{
+               width: 405px;
+               
+               position: absolute;
+               bottom: 0;
+          }
+     }
+     img{
+          position: absolute;
+          top: 0;
+          left: 100%;
+          transform: translateX(-100%);
+          z-index: -1;
+          height: 100%;
+     }
+}

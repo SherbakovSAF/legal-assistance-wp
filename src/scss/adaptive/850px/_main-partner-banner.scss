@@ -1,0 +1,30 @@
+.partner-banner{
+     background-color: #273895;
+     height: 274px;
+     .partner-banner_text-wrap{
+          .partner-banner_text{
+               padding-top: 49px;
+               text-align: center;
+               h2{
+                    font-size: 24px;
+                    
+               }
+               p{
+                    max-width: auto;
+               }
+          }
+          svg{
+               width: 214px;
+               position: absolute;
+               top: 0;
+          }
+     }
+     img{
+          position: absolute;
+          top: 0;
+          left: 250%;
+          
+          z-index: -1;
+          height: 100%;
+     }
+}
