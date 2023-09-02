@@ -1,7 +1,3 @@
-
-
-@import './variables';
-
 // ----- Сброс
 a{
      text-decoration: none;
@@ -14,8 +10,32 @@ abbr {
 ul {
      list-style: none;
 }
+button{
+     background-color: transparent;
+     border: none;
+     font-size: inherit;
+     color: inherit;
+     cursor: pointer;
+}
 
+@import './variables';
 // -------------------
+
+@mixin container($size) {
+     max-width: $size;
+     margin: 0 auto
+}
+
+// Main Style
+.large-container {
+     @include container($size: 1280px)
+}
+
+.small-container {
+     @include container($size: 1060px)
+}
+
+
 
 body{
      padding-top: 48px;
@@ -32,196 +52,12 @@ body{
           padding: 0;
      }
 }
-
-
-@mixin container($size) {
-     max-width: $size;
-     margin: 0 auto
-}
-
-// Main Style
-.large-container {
-     @include container($size: 1280px)
-}
-
-.small-container {
-     @include container($size: 1060px)
-}
+// Component
+@import './components/ui.scss';
 
 // Blocks
 @import './blocks/header.scss';
 @import './blocks/main.scss';
 
-
-
-
-
 // Adaptive
 @import './a-main.scss';
-
-
-
-// Component
-@import './components/ui.scss';
-
-
-
-// .text-description_color-dark{
-//      color: $text-grey-dark;
-// }
- 
-// .text-description_list{
-//      font-size: 16px;
-//      line-height: 24px;
-// }
-
-// .text-nav{
-//      color: black;
-//      font-size: 16px;
-//      letter-spacing: 0.48px;
-// }
-
-// .text-header{
-//      color: #262626;
-//      font-size: 48px;
-//      font-weight: 700;
-//      line-height: 114.5%
-// }
-
-// .text-header-list{
-//      color: $text-grey-dark;
-//      font-size: 16px;
-//      line-height: 162.5%;
-// }
-
-// .text-header-section-title{
-//      color: $text-grey-dark;
-//      font-size: 32px;
-//      font-weight: 700;
-//      line-height: 137.5%;
-// }
-
-// .tarifi-title {
-//      color: #2741D0;
-//      font-size: 16px;
-//      font-weight: 700;
-//      line-height: 187.5%;
-//      letter-spacing: 2.4px;
-//      text-transform: uppercase;
-// }
-
-// .tarifi-title-description {
-//      color: #737373;
-//      color: #404040;
-//      font-family: Gotham Pro;
-//      font-size: 16px;
-//      font-style: normal;
-//      font-weight: 700;
-//      line-height: 30px; /* 187.5% */
-// }
-
-// // YНачало
-// .text-phone {
-//      color: $text-grey-dark;
-//      font-size: 16px;
-//      font-weight: 700 ;
-// }
-
-// .text-header-subblock-list{
-//      color: $text-grey-dark;
-//      font-size: 16px;
-//      font-weight: 700;
-// }
-// Конец
-
-
-
-
-
-
-// font-size: 100px;
-//      font-weigth: bold;
-//      font-family: sans-serif;
-//      text-transform: uppercase;
-//      /* линейный градиент, слева на право, 3 цвета */
-//      background-image: linear-gradient(to bottom, rgba(70, 20, 232, 1) 0%, rgba(188, 167, 255, 1) 46%);
-//      /* обрезаем фон по тексту */
-//      -webkit-background-clip: text;
-//      /* меняет цвет текста заголовка на прозрачный что бы можно было увидеть градиент*/
-//      -webkit-text-fill-color: transparent;
-
-
-// fs 16
-// color #303030
-// fw 700
-
-// 4
-// fs16
-// color 303030
-// lh 26 
-// fw 400
-
-
-// 2
-// fs 16
-// color 000
-// letter-spacing: 0.48px;
-// fw 400
-
-// 7
-// color 2741D0
-// fs 16
-// fw 700
-// lh 30 
-// letter-spacing: 2.4px;
-// text-transform: uppercase;
-
-
-// 9
-// color 404040
-// fs 16
-// fw 400
-// lh 30
-
-
-// // Таких мало
-// 3
-// color: #262626;
-// font-size: 48px;
-// line-height: 55px;
-// fw700
-
-
-
-// 5 
-// fs 32
-// color 303030
-// fw 700
-// lh 44
-
-// 6
-// fs 48
-// lh 44
-// fw700
-
-
-
-// 8
-// color: #737373;
-// fs 14
-// fw 400
-// lh 30
-
-
-
-// 9
-// color fff
-// fs 32
-// fw 700
-// lh 44
-
-// 10
-// база, но белый
-
-// 11
-// декоративный, но там разные размеры

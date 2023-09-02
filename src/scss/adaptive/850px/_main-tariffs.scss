@@ -1,0 +1,88 @@
+.tariffs{
+     margin-bottom: 72px;
+     .tariffs_header{
+          margin-bottom: 16px;
+          h2{
+               margin-bottom: 8px;
+               font-size: 24px;
+          }
+          p{
+               font-size: 12px;
+          }
+     }
+     .tariffs_time-toggle{
+          margin-bottom: 16px;
+          font-size: 14px;
+          *.tariff-toggle-active{
+               padding: 8px 30px;
+          }
+          *:not(:first-child){
+               margin-left: 25px;
+          }
+     }
+     .tariffs_card-wrap{
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 8px;
+          grid-column-gap: 0px;
+          :first-child{
+               grid-column: auto;
+               div{
+                    ul.tariffs_card_privilege{
+                         display: flex;
+                         max-width: 100%;
+                    }
+               }
+          }
+          .tariffs_card {
+               
+               div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 24px;
+                    *{
+                         margin-bottom: 16px;
+                    }
+                    .tariffs_card_type-client{
+                         font-size: 12px;
+                    }
+                    .tariffs_card_price{
+                         font-size: 14px;
+                    }
+
+                    .tariffs_card_privilege-title{
+                         font-size: 14px;
+                    }
+                    .tariffs_card_privilege {
+                         li{
+                              &::before{
+                                   margin-right: 13px;
+                              }
+                         }
+                    }
+                    .tariffs_card_more-btn {
+                         font-size: 12px;
+                         &:after{
+                              width: 13px;
+                              height: 12px;
+                              margin-left: 8px;
+                              
+                         }
+                    }
+                    .btn{
+                         font-size: 12px;
+                    }
+               }
+          }
+          .tariffs_card--free{
+               .tariffs_card_title::after{
+                    content: 'Бесплатно';
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+               }
+          }
+          
+          
+     }
+}
