@@ -3,6 +3,10 @@
 @import './header-title';
 @import './header-advantages';
 
+// Обращение не по тэгу, так как класс приоритетнее
+.header{
+     margin-bottom: 187px;
+}
 
 
 .header-information_connect-icon{
@@ -17,3 +21,4 @@
           display: flex;
      }
 }
+

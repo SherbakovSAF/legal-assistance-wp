@@ -33,16 +33,6 @@ body{
      }
 }
 
-// Blocks
-@import './blocks/header.scss';
-@import './blocks/main.scss';
-
-
-// Component
-@import './components/ui.scss';
-
-// Adaptive
-@import './a-main.scss';
 
 @mixin container($size) {
      max-width: $size;
@@ -58,7 +48,21 @@ body{
      @include container($size: 1060px)
 }
 
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main.scss';
 
+
+
+
+
+// Adaptive
+@import './a-main.scss';
+
+
+
+// Component
+@import './components/ui.scss';
 
 
 
