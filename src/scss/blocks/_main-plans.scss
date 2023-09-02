@@ -1,0 +1,17 @@
+.plans {
+     margin-bottom: 121px;
+     background-color: #273895;
+     
+     width: 100%;
+     .plans_content-wrap{
+          padding: 96px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #fff;
+          .plans_stats-wrap{
+               display: flex;
+               text-align: center;
+          }
+     }
+}
