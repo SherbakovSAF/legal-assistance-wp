@@ -1,0 +1,24 @@
+@import './header-information';
+@import './header-information-nav';
+@import './header-title';
+@import './header-advantages';
+
+// Обращение не по тэгу, так как класс приоритетнее
+.header{
+     margin-bottom: 187px;
+}
+
+
+.header-information_connect-icon{
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+     border-radius: 7px;
+     display: none;
+     div {
+          width: 50%;
+          height: 50%;
+          display: flex;
+     }
+}
+

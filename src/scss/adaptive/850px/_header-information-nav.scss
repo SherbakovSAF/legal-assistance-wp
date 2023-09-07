@@ -1,0 +1,42 @@
+.header-information_nav {
+     grid-column-start: auto;
+     grid-column-end: auto;
+
+     label{
+          display: flex;     
+     }
+     &:has(input:not(:checked)) ul {
+          display: none;
+     }
+
+     ul{
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0px);
+          background-color: $body-color;
+          width: 100vw;
+          height: 100vh;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+
+          li{
+               padding: 1em 0px;
+          }
+
+          :not(:last-child){
+               margin-right: 0px;
+          }
+          
+          #login-nav-btn{
+               display: block;
+          }
+     }
+}
+
+body:has(.header-information_nav input:checked){
+     overflow: hidden;
+}

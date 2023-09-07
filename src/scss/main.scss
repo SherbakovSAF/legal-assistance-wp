@@ -1,3 +1,64 @@
-body{
-     background-color: green;
+// ----- Сброс
+a{
+     text-decoration: none;
+     color: inherit;
 }
+
+abbr {
+     text-decoration: none;
+}
+ul {
+     list-style: none;
+}
+button{
+     background-color: transparent;
+     border: none;
+     font-size: inherit;
+     color: inherit;
+     cursor: pointer;
+}
+
+@import './variables';
+// -------------------
+
+@mixin container($size) {
+     max-width: $size;
+     margin: 0 auto
+}
+
+// Main Style
+.large-container {
+     @include container($size: 1280px)
+}
+
+.small-container {
+     @include container($size: 1060px)
+}
+
+
+
+body{
+     padding-top: 48px;
+     margin: 0;
+     font-family: 'Gotham Pro';
+     font-size: 14px;
+     // line-height: 21px;
+     font-weight: 400;
+     background-color: $body-color;
+     
+     *{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+     }
+}
+// Component
+@import './components/ui.scss';
+
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+@import './blocks/footer.scss';
+
+// Adaptive
+@import './a-main.scss';
