@@ -8,6 +8,9 @@ function extra_mime_types( $mimes ) {
 	return $mimes;
 }
 
+function theme_register_nav_menu(){
+	register_nav_menu('headerNav', 'Меню в header');
+}
 
 function theme_register(){
 	register_nav_menu('headerNav', 'Меню в header');
