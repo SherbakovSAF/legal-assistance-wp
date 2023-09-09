@@ -1,0 +1,34 @@
+
+footer {
+     
+     .footer-info {
+          display: flex;
+          flex-direction: column;
+          .footer-info_social-media {
+               margin-top: 32px;
+               
+               grid-column-gap: 10px;
+               a {
+                    img {
+                         padding: 11px;
+                         width: 45px;
+                         height: 45px;
+                    }
+               }
+          }
+     }     
+     .confidentiality-wrap {
+          > div {
+               flex-direction: column-reverse;
+               align-items: center;
+               .confidentiality-wrap_links{
+                    display: flex;
+                    flex-direction: column;
+                    :last-child{
+                         margin-left: 0px;
+                    }
+               }
+          }
+
+     }
+}

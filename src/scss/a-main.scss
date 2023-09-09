@@ -1,0 +1,25 @@
+@media (max-width: 770px) {
+
+     body{
+          padding: 20px 15px;
+     }
+     @import './adaptive/850px/logoBlock';
+     @import './adaptive/850px/header';
+     @import './adaptive/850px/header-information';
+     @import './adaptive/850px/header-information-nav';
+     @import './adaptive/850px/header-title';
+     @import './adaptive/850px/header-advantages';
+     @import './adaptive/850px/header-pic';
+     
+     @import './adaptive/850px/main.scss';
+     @import './adaptive/850px/main-support-about';
+     @import './adaptive/850px/main-support-clients';
+     @import './adaptive/850px/main-partner-banner';
+     @import './adaptive/850px/main-tariffs';
+     @import './adaptive/850px/main-plans';
+     @import './adaptive/850px/main-start';
+
+     @import './adaptive/850px/footer';
+
+     
+}

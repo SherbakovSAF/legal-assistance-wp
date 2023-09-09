@@ -1,0 +1,85 @@
+
+.support-about{
+     flex-direction: column;
+     .support-about-title{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          h2{
+               margin-top: 24px;
+               margin-bottom: 16px;
+          }
+          margin-bottom: 24px;
+     }
+     .support-about-stats{
+          margin-left: 0;
+          .support-about-stats-text{
+               grid-column-gap: 16px;
+               grid-row-gap: 16px;
+               dl{
+                    dt{
+                         margin-bottom: 4px;
+                    }
+                    dd{
+                         font-size: 10px;
+                    }
+                    
+                    &:nth-child(odd){
+                         padding: 16px;
+                    }
+                    &:nth-child(even){
+                         padding: 16px;
+                    }
+                    &:nth-child(1){
+                         width: 142px;
+                         dt{
+                              font-size: 32px;
+                              span{
+                                   font-size: 10px;
+                              }
+                         }
+                    }
+                    &:nth-child(2){
+                         width: 124px;
+                         transform: translateY(15%);
+                         dt{
+                              font-size: 36px;
+                              font-weight: 700;
+                              span{
+                                   font-size: 10px;
+                              }
+                         }
+                    }
+                    &:nth-child(3){
+                         width: 124px;
+                         dt{
+                              font-size: 32px;
+                         }
+                    }
+                    &:nth-child(4){
+                         width: 132px;
+                         transform: translateY(15%);
+                         dt{
+                              font-size: 12px;
+                         
+                         }
+                    }
+                    
+               }
+          
+          }
+          .support-about-stats-img{
+               
+               top: -5%;
+               left: 0%;
+               
+               svg{
+
+                    width: 324px;
+                    height: 154px;
+                    
+               }
+          }
+     }
+}

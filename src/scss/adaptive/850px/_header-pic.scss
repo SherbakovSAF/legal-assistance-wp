@@ -1,0 +1,41 @@
+.header-circle-el{
+     position: static;
+
+     margin: 0 auto;
+
+     width: 122px;
+     height: 122px;
+     margin-top: 49px;
+
+     div{
+          p{
+               font-size: 12px;
+               span:nth-child(1){
+                    font-size: 12px;
+               }
+               span:nth-child(2){
+                    font-size: 10px;
+               }
+          }
+          svg {
+               position: absolute;
+               top: -30%;
+               left: 0%;
+               background-color: transparent;
+               border-radius: 50%;
+               z-index: -1;
+          }
+     }
+}     
+     
+
+
+.header-img{
+     position: absolute;
+     width: 280px;
+     height: 312px;
+     z-index: -2;
+     top: 25%;
+     left: 0;
+     opacity: 0.4;
+}
