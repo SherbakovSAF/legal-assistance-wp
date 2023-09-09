@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-// ----- Сброс
-=======
 @import './scss/variables';
 
 /* ----- Сброс */
->>>>>>> 831631f177a992a07d032a79bfb5d683b23eb45e
 a{
      text-decoration: none;
      color: inherit;
@@ -24,14 +20,11 @@ button{
      cursor: pointer;
 }
 
-<<<<<<< HEAD
 @import './scss/variables';
-=======
->>>>>>> 831631f177a992a07d032a79bfb5d683b23eb45e
 // -------------------
 
 @mixin container($size) {
-     max-width: $size;
+     width: $size;
      margin: 0 auto
 }
 
@@ -47,22 +40,24 @@ button{
 
 
 body{
-<<<<<<< HEAD
      padding-top: 48px;
-=======
-     padding-top: 2px;
->>>>>>> 831631f177a992a07d032a79bfb5d683b23eb45e
      margin: 0;
      font-family: 'Gotham Pro';
      font-size: 14px;
      // line-height: 21px;
      font-weight: 400;
      background-color: $body-color;
+     height: 100vh;
      
      *{
           box-sizing: border-box;
           margin: 0;
           padding: 0;
+     }
+     .main-flex-wrap{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between
      }
 }
 // Component
