@@ -125,23 +125,6 @@ Template Name: home
                <button href="#">Год</button>
           </div>
           <ul class="tariffs_card-wrap">
-               <!-- <li class="tariffs_card tariffs_card--free">
-                    <div>
-                         <h3 class="tariffs_card_title"><?php the_title() ?></h3>
-                         <p class="tariffs_card_type-client"></p>
-                         <p class="tariffs_card_price">$28/месяц</p>
-                         <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
-                         <ul class="tariffs_card_privilege">
-                              <li>Бесплатная телефонная линия + функция “перезвоните мне” </li>
-                              <li>Доступ к первому юридическому интеллекту Sirius 24/7</li>
-                              <li>Личный кабинет (полная версия)</li>
-                              <li>Конструктор документов</li>
-                              <li>Устные и письменные консультации юристов 24/7</li>
-                         </ul>
-                         <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
-                         <a class="btn" href="#">Оставить заявку</a>
-                    </div>
-               </li> -->
                <?php
                global $post;
 
@@ -162,13 +145,13 @@ Template Name: home
                                    <p class="tariffs_card_price"><?php the_field('price') ?></p>
                                    <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
                                    <ul class="tariffs_card_privilege">
-                                        <?php 
-                                             for ($i=1; $i <=5 ; $i++) { 
-                                                  if (get_field('privilege'.$i)){
-                                                       $privilegeText = get_field('privilege'.$i);
-                                                       echo '<li>'.$privilegeText.'</li>';
-                                                  }
+                                        <?php
+                                        for ($i = 1; $i <= 5; $i++) {
+                                             if (get_field('privilege' . $i)) {
+                                                  $privilegeText = get_field('privilege' . $i);
+                                                  echo '<li>' . $privilegeText . '</li>';
                                              }
+                                        }
                                         ?>
                                    </ul>
                                    <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
@@ -183,77 +166,6 @@ Template Name: home
 
                wp_reset_postdata(); // Сбрасываем $post
                ?>
-
-
-               <!-- <li class="tariffs_card tariffs_card--free">
-                    <div>
-                         <h3 class="tariffs_card_title">Стандарт</h3>
-                         <p class="tariffs_card_type-client">Для физических лиц</p>
-                         <p class="tariffs_card_price">$28/месяц</p>
-                         <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
-                         <ul class="tariffs_card_privilege">
-                              <li>Бесплатная телефонная линия + функция “перезвоните мне” </li>
-                              <li>Доступ к первому юридическому интеллекту Sirius 24/7</li>
-                              <li>Личный кабинет (полная версия)</li>
-                              <li>Конструктор документов</li>
-                              <li>Устные и письменные консультации юристов 24/7</li>
-                         </ul>
-                         <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
-                         <a class="btn" href="#">Оставить заявку</a>
-                    </div>
-               </li> -->
-               <!--
-               <li class="tariffs_card">
-                    <div>
-                         <h3 class="tariffs_card_title">бизнес-консультант</h3>
-                         <p class="tariffs_card_type-client">Для частных лиц и фрилансеров</p>
-                         <p class="tariffs_card_price">$38/месяц</p>
-                         <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
-                         <ul class="tariffs_card_privilege">
-                              <li>Бесплатная телефонная линия + функция “перезвоните мне” </li>
-                              <li>Доступ к первому юридическому интеллекту Sirius 24/7</li>
-                              <li>Пакет документов для открытия бизнеса в РФ</li>
-                              <li>Сопровождение сделок</li>
-                              <li>Устные и письменные консультации юристов 24/7</li>
-                         </ul>
-                         <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
-                         <a class="btn" href="#">Оставить заявку</a>
-                    </div>
-               </li>
-               <li class="tariffs_card">
-                    <div>
-                         <h3 class="tariffs_card_title">бизнес-премиум</h3>
-                         <p class="tariffs_card_type-client">Для среднего бизнеса</p>
-                         <p class="tariffs_card_price">$49/месяц</p>
-                         <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
-                         <ul class="tariffs_card_privilege">
-                              <li>Разработка уникальных договоров любой сложности</li>
-                              <li>Доступ к первому юридическому интеллекту Sirius 24/7</li>
-                              <li>Регистрация компаний и открытия счетов в РФ</li>
-                              <li>Сопровождение сделок любой сложности</li>
-                              <li>Устные и письменные консультации юристов 24/7</li>
-                         </ul>
-                         <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
-                         <a class="btn" href="#">Оставить заявку</a>
-                    </div>
-               </li>
-               <li class="tariffs_card">
-                    <div>
-                         <h3 class="tariffs_card_title">международный бизнес</h3>
-                         <p class="tariffs_card_type-client">Для ведения бизнеса за рубежом</p>
-                         <p class="tariffs_card_price">$98/месяц</p>
-                         <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
-                         <ul class="tariffs_card_privilege">
-                              <li>Разработка уникальных договоров любой сложности</li>
-                              <li>Консультации и сопровождение по регистрации компаний и банковских счетов по всему миру</li>
-                              <li>Оказание юридических услуг на английском языке</li>
-                              <li>Консультации по международному праву</li>
-                              <li>Сопровождение сделок любой сложности</li>
-                         </ul>
-                         <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
-                         <a class="btn" href="#">Оставить заявку</a>
-                    </div>
-               </li> -->
           </ul>
      </section>
      <section class="partner-banner">
@@ -305,24 +217,29 @@ Template Name: home
      </section>
      <section class="plans">
           <div class="plans_content-wrap large-container">
-               <h2>Прогнозы партнерской программы на 2021 год</h2>
+               <h2>Прогнозы партнерской программы на <?php echo date("Y") ?> год</h2>
                <div class="plans_stats-wrap">
-                    <dl>
-                         <dt>$2 млн.</dt>
-                         <dd>Заработают партнеры ILC</dd>
-                    </dl>
-                    <dl>
-                         <dt>10 000+</dt>
-                         <dd>Полисов будет оформлено по партнерским ссылкам</dd>
-                    </dl>
-                    <dl>
-                         <dt>800+</dt>
-                         <dd>Партнеров присоединится к нам</dd>
-                    </dl>
-                    <dl>
-                         <dt>$1500</dt>
-                         <dd>Средний доход партнера в месяц</dd>
-                    </dl>
+                    <?php
+                    global $post;
+
+                    $myposts = get_posts([
+                         'numberposts' => -1,
+                         'category'    => 6
+                    ]);
+
+                    if ($myposts) {
+                         foreach ($myposts as $post) {
+                              setup_postdata($post);
+                    ?>
+                         <dl>
+                              <dt><?php the_content() ?></dt>
+                              <dd><?php the_title() ?></dd>
+                         </dl>
+                    <?php
+                         }
+                    } 
+                    wp_reset_postdata(); // Сбрасываем $post
+                    ?>
                </div>
           </div>
      </section>
