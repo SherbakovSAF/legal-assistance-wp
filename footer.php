@@ -6,10 +6,25 @@
                <p>Первый цифровой международный юридический центр</p>
           </div>
           <div class="footer-info_social-media">
-               <a href="#"><img src="<?php echo wp_get_upload_dir()['url'] . '/vk.svg' ?>" alt="vk"></a>
-               <a href="#"><img src="<?php echo wp_get_upload_dir()['url'] . '/instagram.svg' ?>" alt="instagram"></a>
-               <a href="#"><img src="<?php echo wp_get_upload_dir()['url'] . '/twitter.svg' ?>" alt="twitter"></a>
-               <a href="#"><img src="<?php echo wp_get_upload_dir()['url'] . '/facebook.svg' ?>" alt="facebook"></a>
+          <?php
+               global $post;
+               $myposts = get_posts([
+                    'post_type' => 'social_media',
+                    'numberposts' => -1,
+                    'suppress_filters' => true,
+               ]);
+
+               require get_template_directory().'/src/phpScripts/getSocialIcon.php';
+
+               if ($myposts) {
+                    foreach ($myposts as $post) {
+                         setup_postdata($post);
+                         echo get_social_icon(get_field('url'));
+                    }
+               } 
+               wp_reset_postdata(); 
+               ?>
+               
           </div>
      </div>
 
