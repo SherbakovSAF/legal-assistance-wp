@@ -6,7 +6,7 @@ function formatPhoneNumber($phoneNumber) {
      // Проверяем длину номера
      $numberLength = strlen($phoneNumber);
      if ($numberLength != 11) {
-         return $phoneNumber; // Возвращаем исходный номер, если длина неверна
+         return ''; // Возвращаем исходный номер, если длина неверна
      }
  
      // Форматируем номер
