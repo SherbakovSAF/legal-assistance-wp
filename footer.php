@@ -15,7 +15,9 @@
 
      <div class="confidentiality-wrap">
           <div class="large-container">
-               <blockquote>©<?php echo date("Y")?> «International Legal Center» | Разработано: effex-it.com</blockquote>
+               <blockquote>©<?php echo date("Y")?> «International Legal Center» | Разработано: 
+                    <a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
+               </blockquote>
                <div class="confidentiality-wrap_links">
                     <a href="#">Политика конфиденциальности</a>
                     <a href="#">Пользовательское соглашение</a>
