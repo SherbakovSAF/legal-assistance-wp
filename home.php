@@ -4,6 +4,9 @@ Template Name: home
 */
 ?>
 <?php get_header(); ?>
+<div class="popup-bg popup-bg--active">
+     <?php echo do_shortcode('[art_feedback]')?>
+</div>
 <div class="header-title">
      <h1 class="text-title">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
      <p class="text-p-title">Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход до $260 с каждого полиса, купленного по вашему приглашению.</p>
@@ -208,7 +211,7 @@ Template Name: home
                               <img src="<?php echo wp_get_upload_dir()['url'] . '/start-result.svg' ?>" alt="start-result">
                               <h3>Результат</h3>
                               <p class="text-description">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов.</p>
-                              <a class="btn" href="#">Начать зарабатывать</a>
+                              <button class="btn" href="#">Начать зарабатывать</button>
                          </div>
                     </article>
                </div>
@@ -231,13 +234,13 @@ Template Name: home
                          foreach ($myposts as $post) {
                               setup_postdata($post);
                     ?>
-                         <dl>
-                              <dt><?php the_content() ?></dt>
-                              <dd><?php the_title() ?></dd>
-                         </dl>
+                              <dl>
+                                   <dt><?php the_content() ?></dt>
+                                   <dd><?php the_title() ?></dd>
+                              </dl>
                     <?php
                          }
-                    } 
+                    }
                     wp_reset_postdata(); // Сбрасываем $post
                     ?>
                </div>

@@ -20,7 +20,12 @@ button{
      cursor: pointer;
 }
 
-@import './scss/variables';
+input, textarea {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     font-family: inherit;
+}
 // -------------------
 
 @mixin container($size) {
@@ -62,6 +67,7 @@ body{
 }
 // Component
 @import './scss/components/ui.scss';
+@import './scss/components/popup';
 
 // Blocks
 @import './scss/blocks/header.scss';

@@ -9,6 +9,24 @@ add_theme_support( 'post-thumbnails');
 add_theme_support( 'custom-logo');
 add_theme_support( 'title-tag');
 
+add_shortcode( 'art_feedback', 'art_feedback' );
+
+function art_feedback() {
+	ob_start();
+	?>
+	<form>
+          <div class="popup-bg_form-content-wrap">
+               <button class="popup-bg_form-content_close-popup">Закрыть</button>
+               <input type="text" id="popUpName" name="name" placeholder="Ваше имя" required pattern="^[a-zA-ZА-Яа-я\s]+$" >
+               <input type="tel" id="popUpTel" name="phone" placeholder="Ваш номер телефона" pattern="^.{17,}$" required >
+               <textarea id="popUpMessage" placeholder="Ваше сообщение"></textarea> 
+			<button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
+          </div>
+     </form>
+	<?php
+	return ob_get_clean();
+}
+
 function register_post_types(){
 	register_post_type( 'tariffs', [
 		'label'  => null,
@@ -101,4 +119,5 @@ function linking_style(){
 	wp_enqueue_style('roboto', get_template_directory_uri().'/assets/fonts/Roboto/stylesheet.css');
 	wp_enqueue_style('gotham', get_template_directory_uri().'/assets/fonts/GothamPro/stylesheet.css');
 	wp_enqueue_style('main', get_template_directory_uri().'/assets/css/main.css');
+	wp_enqueue_script('mainJS', get_template_directory_uri().'/assets/script.bundle.js', [], null, true);
 }
