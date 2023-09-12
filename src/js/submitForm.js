@@ -11,7 +11,7 @@ async function submitForm(e) {
     msg
   }
 
-  const req = await fetch('./wp-content/themes/legalcenter/src/phpScripts/saveMSgForDB.php', {
+  const req = await fetch('./wp-content/themes/legalcenter/src/phpScripts/save-msg-for-db.php', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'

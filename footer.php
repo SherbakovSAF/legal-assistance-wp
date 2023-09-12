@@ -10,7 +10,7 @@
                global $post;
                $myposts = get_posts(['post_type' => 'social_media', 'numberposts' => -1,'suppress_filters' => true,]);
 
-               require get_template_directory().'/src/phpScripts/getSocialIcon.php';
+               require get_template_directory().'/src/phpScripts/get-social-icon.php';
 
                if ($myposts) {
                     foreach ($myposts as $post) {
