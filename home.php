@@ -178,7 +178,7 @@ Template Name: home
                </div>
                <img src="<?php echo wp_get_upload_dir()['url'] . '/partner-people-img.svg' ?>" alt="partner-people-img">
           </div>
-          <img src="<?php echo wp_get_upload_dir()['url'] . '/partners-banner-planet.jpg' ?>" alt="partners-banner-planet">
+          <img class="partners-banner-planet" src="<?php echo wp_get_upload_dir()['url'] . '/partners-banner-planet.jpg' ?>" alt="partners-banner-planet">
      </section>
      <section class="start small-container">
           <h2>Начать легко</h2>

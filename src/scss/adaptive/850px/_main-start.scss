@@ -6,7 +6,7 @@
      }
      .start_content-wrap {
           position: relative;
-          img {
+          > img {
                display: none;
           }
           .start-content_card-block-wrap{
@@ -49,6 +49,10 @@
                     :nth-child(3){
                          grid-column: 2/3;
                          grid-row: 1/3;
+                         > div img {
+                              display: block;
+                              margin: 0 auto;
+                         }
                     }
                }
                

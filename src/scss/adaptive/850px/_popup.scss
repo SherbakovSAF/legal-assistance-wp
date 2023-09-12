@@ -1,0 +1,30 @@
+.popup-bg {
+     &.popup-bg--active {
+          form {
+               position: absolute;
+               width: 100%;
+               padding: 20px;
+
+               font-size: 25px;
+
+               transition: 0.5s all;
+
+               .popup-bg_form-content-wrap {
+                    width: 100%;
+                    grid-row-gap: 20px;
+                    input,
+                    textarea {
+                         padding: 1em;
+                         font-size: 16px;
+                    }
+                    textarea {
+                         height: auto;
+                    }
+               }
+
+               .popup-bg_form-content_form-submit {
+                    width: 80%;
+               }
+          }
+     }
+}

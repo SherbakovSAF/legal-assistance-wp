@@ -4,6 +4,9 @@
      }
      
      @import './adaptive/850px/logoBlock';
+     @import './adaptive/850px/popup';
+
+
      @import './adaptive/850px/header';
      @import './adaptive/850px/header-information';
      @import './adaptive/850px/header-information-nav';
@@ -12,6 +15,7 @@
      @import './adaptive/850px/header-pic';
      
      @import './adaptive/850px/main.scss';
+     @import './adaptive/850px/main-support';
      @import './adaptive/850px/main-support-about';
      @import './adaptive/850px/main-support-clients';
      @import './adaptive/850px/main-partner-banner';

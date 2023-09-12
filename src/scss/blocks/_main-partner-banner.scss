@@ -1,4 +1,5 @@
 .partner-banner{
+     overflow: hidden;
      background-color: #273895;
      z-index: -2;
      position: relative;
@@ -6,6 +7,7 @@
      margin-bottom: 172px;
      .partner-banner_text-wrap{
           max-width: 100%;
+          position: relative;
           .partner-banner_text{
                padding-top: 88px;
                h2{
@@ -16,13 +18,16 @@
                }
           }
           img{
-               width: 405px;
-               
                position: absolute;
-               bottom: 0;
+               width: 405px;
+               height: 391px;
+               
+               z-index: 0;
+               top: 30px;
+               left: 0;
           }
      }
-     img{
+     .partners-banner-planet{
           position: absolute;
           top: 0;
           left: 100%;

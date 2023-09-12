@@ -21,7 +21,7 @@
                     <div class="header-information_connect">
                          <a class="header-information_connect-icon" href="tel:+78005113768">
                               <div>
-                                   <img src="<?php echo wp_get_upload_dir()['url'] . '/nav-mobile-adaptive-icon.svg' ?>" alt="nav-mobile-adaptive-icon">
+                                   <img src="<?php echo bloginfo('template_url') . '/assets/img/header/nav-mobile-adaptive-icon.svg' ?>" alt="nav-mobile-adaptive-icon">
                               </div>
                          </a>
                          <div class="header-information_connect_group">

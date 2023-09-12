@@ -24,8 +24,9 @@ function art_feedback() {
                <input type="text" id="popUpName" name="name" placeholder="Ваше имя" required pattern="^[a-zA-ZА-Яа-я\s]+$" >
                <input type="tel" id="popUpTel" name="phone" placeholder="Ваш номер телефона" pattern="^.{17,}$" required >
                <textarea id="popUpMessage" id="popUpMsg" placeholder="Ваше сообщение"></textarea> 
-			<button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
+			
           </div>
+		<button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
      </form>
 	<?php
 	return ob_get_clean();
