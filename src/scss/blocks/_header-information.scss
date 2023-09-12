@@ -6,15 +6,15 @@
      position: relative;
 
      margin-bottom: 120px;
-     .header-information__connect{
+     .header-information_connect{
           justify-self: end;
-
+          
           .header-information_connect-icon {
-               background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);     
+               
                div {
                     justify-content: center;
                     align-items: center;
-                    svg {
+                    img {
                          width: 100%;
                          height: 100%;
                          fill: white;

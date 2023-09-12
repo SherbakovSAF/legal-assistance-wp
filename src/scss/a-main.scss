@@ -1,8 +1,8 @@
 @media (max-width: 770px) {
-
-     body{
-          padding: 20px 15px;
+     .large-container, .small-container {
+          @include container($size: 90%)
      }
+     
      @import './adaptive/850px/logoBlock';
      @import './adaptive/850px/header';
      @import './adaptive/850px/header-information';

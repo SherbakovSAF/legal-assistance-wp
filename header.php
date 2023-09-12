@@ -18,13 +18,13 @@
                          <abbr title="International Legal Center">International<br>Legal Center</abbr>
                          <p class="text-description_color-base"><?php the_field('slogan_company') ?></p>
                     </div>
-                    <div class="header-information__connect">
-                         <a class="header-information__connect__phone-icon header-information_connect-icon" href="tel:+78005113768">
+                    <div class="header-information_connect">
+                         <a class="header-information_connect-icon" href="tel:+78005113768">
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/nav-mobile-adaptive-icon.svg' ?>" alt="nav-mobile-adaptive-icon">
                               </div>
                          </a>
-                         <div class="header-information__connect__group">
+                         <div class="header-information_connect_group">
                               <a class="text-phone" id="phone" href="tel:<?php the_field('phone_number') ?>">
                                    <?php 
                                         $phoneNumber = get_field('phone_number');

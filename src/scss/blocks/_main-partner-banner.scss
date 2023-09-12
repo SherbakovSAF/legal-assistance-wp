@@ -5,7 +5,7 @@
      height: 398px;
      margin-bottom: 172px;
      .partner-banner_text-wrap{
-          
+          max-width: 100%;
           .partner-banner_text{
                padding-top: 88px;
                h2{
@@ -15,7 +15,7 @@
                     max-width: 321px;
                }
           }
-          svg{
+          img{
                width: 405px;
                
                position: absolute;

@@ -4,7 +4,7 @@ Template Name: home
 */
 ?>
 <?php get_header(); ?>
-<div class="popup-bg popup-bg--active">
+<div class="popup-bg">
      <?php echo do_shortcode('[art_feedback]')?>
 </div>
 <div class="header-title">
@@ -15,7 +15,6 @@ Template Name: home
      </div>
 </div>
 <div class="header-circle-el">
-
      <div>
           <p>
                Доход
@@ -51,7 +50,7 @@ Template Name: home
      </div>
 </div>
 </header>
-<main>
+ <main>
      <section class="support small-container">
           <div class="support-about">
                <div class="support-about-title">
@@ -246,7 +245,7 @@ Template Name: home
                </div>
           </div>
      </section>
-</main>
+</main> 
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
 </div>

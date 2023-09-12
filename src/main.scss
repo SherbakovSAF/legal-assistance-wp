@@ -59,11 +59,7 @@ body{
           margin: 0;
           padding: 0;
      }
-     .main-flex-wrap{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between
-     }
+     
 }
 // Component
 @import './scss/components/ui.scss';

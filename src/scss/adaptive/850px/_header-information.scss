@@ -1,11 +1,10 @@
 .header-information{
      grid-template-columns: 1fr auto auto;
      grid-template-rows: repeat(1, 1fr);    
-     .header-information__connect{
-          .header-information__connect__phone-icon {
-               margin-right: 8px;
-          }
-          .header-information__connect__group{
+     .header-information_connect{
+          background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+          border-radius: 7px;
+          .header-information_connect_group{
                display: none;
                
           }

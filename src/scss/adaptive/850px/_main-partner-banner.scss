@@ -6,15 +6,16 @@
           .partner-banner_text{
                padding-top: 49px;
                text-align: center;
+          
                h2{
                     font-size: 24px;
                     
                }
                p{
-                    max-width: auto;
+                    max-width: fit-content;
                }
           }
-          svg{
+          img{
                width: 214px;
                position: absolute;
                top: 0;
