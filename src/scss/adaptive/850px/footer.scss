@@ -1,6 +1,5 @@
 
 footer {
-     
      .footer-info {
           display: flex;
           flex-direction: column;
@@ -19,9 +18,8 @@ footer {
                display: flex;
                justify-content: center;
                flex-wrap: wrap;
-               // grid-template-columns: repeat(4, 1fr);
-
                grid-gap: 10px;
+
                a {
                     img {
                          padding: 11px;
@@ -43,6 +41,5 @@ footer {
                     }
                }
           }
-
      }
 }

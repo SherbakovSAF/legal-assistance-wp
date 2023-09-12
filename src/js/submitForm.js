@@ -1,3 +1,4 @@
+// 		<button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
 async function submitForm(e) {
   e.preventDefault()
   const name = document.getElementById('popUpName').value

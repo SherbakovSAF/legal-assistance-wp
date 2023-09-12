@@ -4,16 +4,13 @@
                position: absolute;
                width: 100%;
                padding: 20px;
-
                font-size: 25px;
-
                transition: 0.5s all;
 
                .popup-bg_form-content-wrap {
                     width: 100%;
                     grid-row-gap: 20px;
-                    input,
-                    textarea {
+                    input, textarea {
                          padding: 1em;
                          font-size: 16px;
                     }

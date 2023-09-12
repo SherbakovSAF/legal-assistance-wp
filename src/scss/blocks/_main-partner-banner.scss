@@ -5,9 +5,11 @@
      position: relative;
      height: 398px;
      margin-bottom: 172px;
+
      .partner-banner_text-wrap{
           max-width: 100%;
           position: relative;
+
           .partner-banner_text{
                padding-top: 88px;
                h2{
@@ -17,16 +19,18 @@
                     max-width: 321px;
                }
           }
+
           img{
                position: absolute;
                width: 405px;
                height: 391px;
-               
                z-index: 0;
                top: 30px;
                left: 0;
           }
+
      }
+     
      .partners-banner-planet{
           position: absolute;
           top: 0;

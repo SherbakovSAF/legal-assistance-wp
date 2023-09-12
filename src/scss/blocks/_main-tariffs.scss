@@ -66,13 +66,13 @@
                                    margin-top: 0.5em;
                                    margin-right: 7px;
                                    transform: translateY(-50%);
-                                   
                               }
                          }
                     }
                     .tariffs_card_more-btn {
                          display: flex;
                          align-items: center;
+
                          &:after{
                               content: '';
                               width: 15px;
@@ -81,7 +81,6 @@
                               background: url(../../assets/img/tariffs/tariffs-card-more-btn.svg) no-repeat center;
                               background-size: contain;
                               margin-left: 16px;
-                              
                          }
                     }
                }
@@ -92,8 +91,6 @@
                     display: block;
                     text-align: center;
                }
-          }
-          
-          
+          }     
      }
 }

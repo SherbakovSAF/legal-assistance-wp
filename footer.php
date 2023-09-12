@@ -8,11 +8,7 @@
           <div class="footer-info_social-media">
           <?php
                global $post;
-               $myposts = get_posts([
-                    'post_type' => 'social_media',
-                    'numberposts' => -1,
-                    'suppress_filters' => true,
-               ]);
+               $myposts = get_posts(['post_type' => 'social_media', 'numberposts' => -1,'suppress_filters' => true,]);
 
                require get_template_directory().'/src/phpScripts/getSocialIcon.php';
 
@@ -23,8 +19,7 @@
                     }
                } 
                wp_reset_postdata(); 
-               ?>
-               
+               ?>     
           </div>
      </div>
 
@@ -38,11 +33,9 @@
                     <a href="#">Пользовательское соглашение</a>
                </div>
           </div>
-
      </div>
 </footer>
 </div>
 <?php wp_footer(); ?>
 </body>
-
 </html>

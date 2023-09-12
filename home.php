@@ -5,7 +5,15 @@ Template Name: home
 ?>
 <?php get_header(); ?>
 <div class="popup-bg">
-     <?php echo do_shortcode('[art_feedback]')?>
+     <form>
+          <div class="popup-bg_form-content-wrap">
+               <button type="button" class="popup-bg_form-content_close-popup">Закрыть</button>
+               <input type="text" id="popUpName" name="name" placeholder="Ваше имя" required pattern="^[a-zA-ZА-Яа-я\s]+$" >
+               <input type="tel" id="popUpTel" name="phone" placeholder="Ваш номер телефона" pattern="^.{17,}$" required >
+               <textarea id="popUpMessage" id="popUpMsg" placeholder="Ваше сообщение"></textarea> 
+          </div>
+          <button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
+     </form>
 </div>
 <div class="header-title">
      <h1 class="text-header-title text-700">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
@@ -31,21 +39,15 @@ Template Name: home
 <div class="header-advantages text-header-advantages">
      <div class="header-advantages__wrap">
           <dl>
-               <dt>
-                    <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-support.svg' ?>" alt="header-advantages-support">
-               </dt>
+               <dt><img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-support.svg' ?>" alt="header-advantages-support"></dt>
                <dd class="text-subtitle text-grey-dark">Юридическая поддержка 24/7</dd>
           </dl>
           <dl>
-               <dt>
-                    <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-possibilities.svg' ?>" alt="header-advantages-possibilities">
-               </dt>
+               <dt><img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-possibilities.svg' ?>" alt="header-advantages-possibilities"></dt>
                <dd class="text-subtitle text-grey-dark">Множество возможностей в одном полисе</dd>
           </dl>
           <dl>
-               <dt>
-                    <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-bonus.svg' ?>" alt="header-advantages-bonus">
-               </dt>
+               <dt><img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-bonus.svg' ?>" alt="header-advantages-bonus"></dt>
                <dd class="text-subtitle text-grey-dark">Бонусы партнерской программы</dd>
           </dl>
      </div>
@@ -93,7 +95,7 @@ Template Name: home
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-business.svg' ?>" alt="support-business">
                               </div>
-                              <h3 class="text-grey-dark text-subtitle">Бизнесу</h3>
+                              <h3 class="text-grey-dark text-subtitle text-700">Бизнесу</h3>
                               <p class="text-line-height">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
                          </div>
                     </article>
@@ -102,7 +104,7 @@ Template Name: home
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-startUp.svg' ?>" alt="support-business">
                               </div>
-                              <h3 class="text-grey-dark text-subtitle">StartUP проектам</h3>
+                              <h3 class="text-grey-dark text-subtitle text-700">StartUP проектам</h3>
                               <p class="text-line-height">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый пакет документов.</p>
                          </div>
                     </article>
@@ -111,7 +113,7 @@ Template Name: home
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-privateClients.svg' ?>" alt="support-privateClients">
                               </div>
-                              <h3 class="text-grey-dark text-subtitle">Частным клиентам</h3>
+                              <h3 class="text-grey-dark text-subtitle text-700">Частным клиентам</h3>
                               <p class="text-line-height">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
                          </div>
                     </article>
@@ -131,11 +133,7 @@ Template Name: home
                <?php
                global $post;
 
-               $myposts = get_posts([
-                    'post_type' => 'tariffs',
-                    'numberposts' => -1,
-                    'suppress_filters' => true,
-               ]);
+               $myposts = get_posts(['post_type' => 'tariffs','numberposts' => -1,'suppress_filters' => true,]);
 
                if ($myposts) {
                     foreach ($myposts as $post) {
@@ -149,12 +147,12 @@ Template Name: home
                                    <h4 class="text-subtitle">Для Вас доступно</h4>
                                    <ul class="tariffs_card_privilege">
                                         <?php
-                                        for ($i = 1; $i <= 5; $i++) {
-                                             if (get_field('privilege' . $i)) {
-                                                  $privilegeText = get_field('privilege' . $i);
-                                                  echo '<li class="text-subtitle">' . $privilegeText . '</li>';
+                                             for ($i = 1; $i <= 5; $i++) {
+                                                  if (get_field('privilege' . $i)) {
+                                                       $privilegeText = get_field('privilege' . $i);
+                                                       echo '<li class="text-subtitle">' . $privilegeText . '</li>';
+                                                  }
                                              }
-                                        }
                                         ?>
                                    </ul>
                                    <!-- tariffs_card_more-btn - создан для псевдоэлемента  -->
@@ -168,7 +166,7 @@ Template Name: home
                     // Постов не найдено
                }
 
-               wp_reset_postdata(); // Сбрасываем $post
+               wp_reset_postdata();
                ?>
           </ul>
      </section>
@@ -227,10 +225,7 @@ Template Name: home
                     <?php
                     global $post;
 
-                    $myposts = get_posts([
-                         'numberposts' => -1,
-                         'category'    => 6
-                    ]);
+                    $myposts = get_posts(['numberposts' => -1,'category' => 6]);
 
                     if ($myposts) {
                          foreach ($myposts as $post) {

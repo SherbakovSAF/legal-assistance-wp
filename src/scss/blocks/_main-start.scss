@@ -6,6 +6,7 @@
      }
      .start_content-wrap {
           position: relative;
+
           > img {
                position: absolute;
                top: 50%;
@@ -14,10 +15,12 @@
                width: 100%;
                z-index: -1;
           }
+
           .start-content_card-block-wrap{
                padding: 0 41.75px;
                display: flex;
                height: 100%;
+
                article {
                     border-radius: 20px;
                     background: #FFF;
@@ -25,12 +28,14 @@
                     counter-increment: article-counter;
                     display: flex;
                     align-items: center;
+
                     > div{          
                          padding: 32px;
                          h3 {
                               margin-bottom: 16px;
                          }
                     }
+
                     h3{
                          &::before{
                               text-align: center;
@@ -62,18 +67,17 @@
                     grid-template-rows: repeat(2, 1fr);
                     grid-gap: $gapGrid;
                     margin-right: $gapGrid;
+
                     :nth-child(2){
                          grid-column: 1/2;
                          grid-row: 2/3;
                     }
+
                     :nth-child(3){
                          grid-column: 2/3;
                          grid-row: 1/3;
                     }
                }
-               
-               
           }
-          
      }
 }

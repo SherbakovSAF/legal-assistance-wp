@@ -1,36 +1,17 @@
 <?php
-add_action('wp_enqueue_scripts', 'linking_style');
-add_action('init', 'register_post_types');
-add_action('init', 'register_social_media');
 
-add_action('wp_ajax_handle_form_submission', 'handle_form_submission'); // Для авторизованных пользователей
-add_action('wp_ajax_nopriv_handle_form_submission', 'handle_form_submission'); // Для неавторизованных пользователей
+add_action('wp_enqueue_scripts', 'linking_style'); // Подключение стилей
+add_action('init', 'register_post_types'); // Создание поля тарифы
+add_action('init', 'register_social_media'); // Создание поля для социальных сетей
 
-add_filter( 'upload_mimes', 'extra_mime_types' );
+add_filter( 'upload_mimes', 'extra_mime_types' ); // Для SVG
 
+// Расширешения для WordPress
 add_theme_support( 'post-thumbnails');
 add_theme_support( 'custom-logo');
 add_theme_support( 'title-tag');
+// Конец расширений
 
-add_shortcode( 'art_feedback', 'art_feedback' );
-
-
-function art_feedback() {
-	ob_start();
-	?>
-	<form>
-          <div class="popup-bg_form-content-wrap">
-               <button type="button" class="popup-bg_form-content_close-popup">Закрыть</button>
-               <input type="text" id="popUpName" name="name" placeholder="Ваше имя" required pattern="^[a-zA-ZА-Яа-я\s]+$" >
-               <input type="tel" id="popUpTel" name="phone" placeholder="Ваш номер телефона" pattern="^.{17,}$" required >
-               <textarea id="popUpMessage" id="popUpMsg" placeholder="Ваше сообщение"></textarea> 
-			
-          </div>
-		<button class="popup-bg_form-content_form-submit" type="submit">Отправить</button>
-     </form>
-	<?php
-	return ob_get_clean();
-}
 
 function register_post_types(){
 	register_post_type( 'tariffs', [
