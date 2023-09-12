@@ -8,14 +8,15 @@ Template Name: home
      <?php echo do_shortcode('[art_feedback]')?>
 </div>
 <div class="header-title">
-     <h1 class="text-title">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
-     <p class="text-p-title">Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход до $260 с каждого полиса, купленного по вашему приглашению.</p>
+     <h1 class="text-header-title text-700">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
+     <p class="text-grey-dark text-line-height">Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход до $260 с каждого полиса, купленного по вашему приглашению.</p>
      <div>
           <a class="btn" href="#">Попробовать бесплатно</a>
      </div>
 </div>
 <div class="header-circle-el">
      <div>
+          <!-- Стиили применяются в файле _header-pic.scss -->
           <p>
                Доход
                <span>до $260</span>
@@ -33,19 +34,19 @@ Template Name: home
                <dt>
                     <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-support.svg' ?>" alt="header-advantages-support">
                </dt>
-               <dd>Юридическая поддержка 24/7</dd>
+               <dd class="text-subtitle text-grey-dark">Юридическая поддержка 24/7</dd>
           </dl>
           <dl>
                <dt>
                     <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-possibilities.svg' ?>" alt="header-advantages-possibilities">
                </dt>
-               <dd>Множество возможностей в одном полисе</dd>
+               <dd class="text-subtitle text-grey-dark">Множество возможностей в одном полисе</dd>
           </dl>
           <dl>
                <dt>
                     <img src="<?php echo wp_get_upload_dir()['url'] . '/header-advantages-bonus.svg' ?>" alt="header-advantages-bonus">
                </dt>
-               <dd>Бонусы партнерской программы</dd>
+               <dd class="text-subtitle text-grey-dark">Бонусы партнерской программы</dd>
           </dl>
      </div>
 </div>
@@ -57,8 +58,8 @@ Template Name: home
                     <div class="logo-block-wrap">
                          <?php the_custom_logo(); ?>
                     </div>
-                    <h2 class="text-support-title">Ваша личная online команда юристов</h2>
-                    <p class="text-support-subtitle">Мы предоставляем комплексный консалтинговый сервис с полисной системой обслуживания для частных клиентов и для бизнеса, с использованием новейших цифровых технологий.</p>
+                    <h2 class="text-section-title">Ваша личная online команда юристов</h2>
+                    <p class="text-line-height">Мы предоставляем комплексный консалтинговый сервис с полисной системой обслуживания для частных клиентов и для бизнеса, с использованием новейших цифровых технологий.</p>
                </div>
                <div class="support-about-stats">
                     <div class="support-about-stats-text">
@@ -85,15 +86,15 @@ Template Name: home
                </div>
           </div>
           <div class="support-clients">
-               <p class="support-clients__title">Даём поддержку</p>
+               <p class="text-grey-dark text-subtitle text-700 text-center">Даём поддержку</p>
                <div class="support-clients__client-card">
                     <article>
                          <div>
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-business.svg' ?>" alt="support-business">
                               </div>
-                              <h3 class="text-supprt-card-title">Бизнесу</h3>
-                              <p class="text-supprt-card-subtitle">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
+                              <h3 class="text-grey-dark text-subtitle">Бизнесу</h3>
+                              <p class="text-line-height">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
                          </div>
                     </article>
                     <article>
@@ -101,8 +102,8 @@ Template Name: home
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-startUp.svg' ?>" alt="support-business">
                               </div>
-                              <h3 class="text-supprt-card-title">StartUP проектам</h3>
-                              <p class="text-supprt-card-subtitle">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый пакет документов.</p>
+                              <h3 class="text-grey-dark text-subtitle">StartUP проектам</h3>
+                              <p class="text-line-height">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый пакет документов.</p>
                          </div>
                     </article>
                     <article>
@@ -110,8 +111,8 @@ Template Name: home
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/support-privateClients.svg' ?>" alt="support-privateClients">
                               </div>
-                              <h3 class="text-supprt-card-title">Частным клиентам</h3>
-                              <p class="text-supprt-card-subtitle">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
+                              <h3 class="text-grey-dark text-subtitle">Частным клиентам</h3>
+                              <p class="text-line-height">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
                          </div>
                     </article>
                </div>
@@ -119,12 +120,12 @@ Template Name: home
      </section>
      <section class="tariffs small-container">
           <div class="tariffs_header">
-               <h2 class="tariffs_header_title">Тарифы</h2>
-               <p class="tariffs_header_subtitle">для всех и для каждого</p>
+               <h2 class="text-section-title">Тарифы</h2>
+               <p>для всех и для каждого</p>
           </div>
-          <div class="tariffs_time-toggle tariff_toggle-text">
-               <button class="tariff-toggle-active">1 месяц</button>
-               <button href="#">Год</button>
+          <div class="tariffs_time-toggle ">
+               <button type="button" class="tariff-btn tariff-btn--active">1 месяц</button>
+               <button type="button" class="tariff-btn">Год</button>
           </div>
           <ul class="tariffs_card-wrap">
                <?php
@@ -142,21 +143,22 @@ Template Name: home
                ?>
                          <li class="tariffs_card">
                               <div>
-                                   <h3 class="tariffs_card_title"><?php the_title() ?></h3>
-                                   <p class="tariffs_card_type-client"><?php the_field('type_client') ?></p>
-                                   <p class="tariffs_card_price"><?php the_field('price') ?></p>
-                                   <h4 class="tariffs_card_privilege-title">Для Вас доступно</h4>
+                                   <h3 class="tariff-card-title-text text-subtitle text-700"><?php the_title() ?></h3>
+                                   <p class="tariff-card-type-client-text"><?php the_field('type_client') ?></p>
+                                   <p class="text-subtitle text-700"><?php the_field('price') ?></p>
+                                   <h4 class="text-subtitle">Для Вас доступно</h4>
                                    <ul class="tariffs_card_privilege">
                                         <?php
                                         for ($i = 1; $i <= 5; $i++) {
                                              if (get_field('privilege' . $i)) {
                                                   $privilegeText = get_field('privilege' . $i);
-                                                  echo '<li>' . $privilegeText . '</li>';
+                                                  echo '<li class="text-subtitle">' . $privilegeText . '</li>';
                                              }
                                         }
                                         ?>
                                    </ul>
-                                   <a class="tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
+                                   <!-- tariffs_card_more-btn - создан для псевдоэлемента  -->
+                                   <a class="text-subtitle text-main tariffs_card_more-btn" href="#">Подробнее в личном кабинете</a>
                                    <a class="btn" href="#">Оставить заявку</a>
                               </div>
                          </li>
@@ -173,43 +175,43 @@ Template Name: home
      <section class="partner-banner">
           <div class="partner-banner_text-wrap small-container">
                <div class="partner-banner_text">
-                    <h2 class="partner-title">Станьте партнером ILC</h2>
-                    <p class="partner-subtitle">и зарабатывайте на рекомендациях в любое время, из любой точки мира</p>
+                    <h2 class="text-section-title text-white">Станьте партнером ILC</h2>
+                    <p class="text-white text-subtitle text-line-height">и зарабатывайте на рекомендациях в любое время, из любой точки мира</p>
                </div>
                <img src="<?php echo wp_get_upload_dir()['url'] . '/partner-people-img.svg' ?>" alt="partner-people-img">
           </div>
           <img class="partners-banner-planet" src="<?php echo wp_get_upload_dir()['url'] . '/partners-banner-planet.jpg' ?>" alt="partners-banner-planet">
      </section>
      <section class="start small-container">
-          <h2>Начать легко</h2>
+          <h2 class="text-section-title">Начать легко</h2>
           <div class="start_content-wrap">
                <div class="start-content_card-block-wrap">
                     <div class="start-content_card-wrap">
                          <article class="start-content_card">
                               <div>
-                                   <h3>Регистрация</h3>
-                                   <p class="text-description">Заполните простую форму для участия в программе и активируйте клиентский пакет.</p>
+                                   <h3 class="text-subtitle">Регистрация</h3>
+                                   <p class="text-description text-line-height">Заполните простую форму для участия в программе и активируйте клиентский пакет.</p>
                               </div>
                          </article>
                          <article class="start-content_card">
                               <div>
-                                   <h3>Обучение</h3>
-                                   <p class="text-description">Вас ждут полезные обучающие материалы, с помощью которых вы легко сможете монетизировать свое время.</p>
+                                   <h3 class="text-subtitle">Обучение</h3>
+                                   <p class="text-description text-line-height">Вас ждут полезные обучающие материалы, с помощью которых вы легко сможете монетизировать свое время.</p>
                               </div>
                          </article>
                          <article class="start-content_card">
                               <div>
                                    <img src="<?php echo wp_get_upload_dir()['url'] . '/start-strategy.svg' ?>" alt="start-strategy">
-                                   <h3>Стратегия</h3>
-                                   <p class="text-description">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов.</p>
+                                   <h3 class="text-subtitle">Стратегия</h3>
+                                   <p class="text-description text-line-height">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов.</p>
                               </div>
                          </article>
                     </div>
                     <article class="start-content_card--last">
                          <div>
                               <img src="<?php echo wp_get_upload_dir()['url'] . '/start-result.svg' ?>" alt="start-result">
-                              <h3>Результат</h3>
-                              <p class="text-description">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов.</p>
+                              <h3 class="text-subtitle">Результат</h3>
+                              <p class="text-description text-line-height">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов.</p>
                               <button class="btn" href="#">Начать зарабатывать</button>
                          </div>
                     </article>
@@ -219,8 +221,9 @@ Template Name: home
      </section>
      <section class="plans">
           <div class="plans_content-wrap large-container">
-               <h2>Прогнозы партнерской программы на <?php echo date("Y") ?> год</h2>
+               <h2 class="text-section-title text-white text-line-height">Прогнозы партнерской программы на <?php echo date("Y") ?> год</h2>
                <div class="plans_stats-wrap">
+                    <!-- plans_stats-wrap, от этого класса зависит внешний вид the_content -->
                     <?php
                     global $post;
 
@@ -234,13 +237,13 @@ Template Name: home
                               setup_postdata($post);
                     ?>
                               <dl>
-                                   <dt><?php the_content() ?></dt>
+                                   <dt class="text-section-title text-white"><?php echo strip_tags(get_the_content())  ?></dt>
                                    <dd><?php the_title() ?></dd>
                               </dl>
                     <?php
                          }
                     }
-                    wp_reset_postdata(); // Сбрасываем $post
+                    wp_reset_postdata();
                     ?>
                </div>
           </div>

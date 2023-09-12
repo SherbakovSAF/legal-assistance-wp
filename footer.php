@@ -28,9 +28,9 @@
           </div>
      </div>
 
-     <div class="confidentiality-wrap">
+     <div class="confidentiality-wrap footer-style-group">
           <div class="large-container">
-               <blockquote>©<?php echo date("Y")?> «International Legal Center» | Разработано: 
+               <blockquote class="footer-author">©<?php echo date("Y")?> «International Legal Center» | Разработано: 
                     <a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
                </blockquote>
                <div class="confidentiality-wrap_links">

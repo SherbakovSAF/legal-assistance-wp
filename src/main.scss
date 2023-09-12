@@ -1,32 +1,20 @@
 @import './scss/variables';
+@import './scss/reset';
 
-/* ----- Сброс */
-a{
-     text-decoration: none;
-     color: inherit;
+body{
+     padding-top: 48px;
+     margin: 0;
+     font-family: 'Gotham Pro';
+     background-color: $body-color;
+     height: 100vh;
+     
+     *{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+     }
+     
 }
-
-abbr {
-     text-decoration: none;
-}
-ul {
-     list-style: none;
-}
-button{
-     background-color: transparent;
-     border: none;
-     font-size: inherit;
-     color: inherit;
-     cursor: pointer;
-}
-
-input, textarea {
-     background-color: transparent;
-     border: none;
-     outline: none;
-     font-family: inherit;
-}
-// -------------------
 
 @mixin container($size) {
      width: $size;
@@ -42,28 +30,8 @@ input, textarea {
      @include container($size: 1060px)
 }
 
-
-
-body{
-     padding-top: 48px;
-     margin: 0;
-     font-family: 'Gotham Pro';
-     font-size: 14px;
-     // line-height: 21px;
-     font-weight: 400;
-     background-color: $body-color;
-     height: 100vh;
-     
-     *{
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-     }
-     
-}
 // Component
 @import './scss/components/ui.scss';
-@import './scss/components/popup';
 
 // Blocks
 @import './scss/blocks/header.scss';

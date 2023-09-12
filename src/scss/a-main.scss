@@ -2,7 +2,10 @@
      .large-container, .small-container {
           @include container($size: 90%)
      }
+
+
      
+     @import './adaptive/850px/ui.scss';
      @import './adaptive/850px/logoBlock';
      @import './adaptive/850px/popup';
 

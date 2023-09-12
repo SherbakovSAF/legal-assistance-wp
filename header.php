@@ -19,16 +19,16 @@
                          <p class="text-description_color-base"><?php the_field('slogan_company') ?></p>
                     </div>
                     <div class="header-information_connect">
-                         <a class="header-information_connect-icon" href="tel:+78005113768">
+                         <a class="header-information_connect-icon" href="tel:<?php the_field('phone_number') ?>">
                               <div>
                                    <img src="<?php echo bloginfo('template_url') . '/assets/img/header/nav-mobile-adaptive-icon.svg' ?>" alt="nav-mobile-adaptive-icon">
                               </div>
                          </a>
                          <div class="header-information_connect_group">
-                              <a class="text-phone" id="phone" href="tel:<?php the_field('phone_number') ?>">
+                              <a class="text-subtitle text-700 text-grey-dark" id="phone" href="tel:<?php the_field('phone_number') ?>">
                                    <?php 
                                         $phoneNumber = get_field('phone_number');
-                                        require get_template_directory().'/src/phpScripts/formatedPhoneNumber.php';
+                                        require get_template_directory().'/src/phpScripts/formated-phone-number.php';
                                         echo formatPhoneNumber($phoneNumber);
                                    ?>
                               </a>
@@ -47,9 +47,9 @@
                          <!-- <?php wp_nav_menu(array(
                               'theme_location' => 'headerNav',
                               'container' => null,
-                              'menu_class' => 'text16'
+                              'menu_class' => 'text-subtitle text-black'
                          )) ?> -->
-                         <ul class="text16">
+                         <ul class="text-subtitle text-black">
                               <li id="login-nav-btn"><a href="#">Войти</a></li>
                               <li><a href="#">О компании</a></li>
                               <li><a href="#">Услуги</a></li>

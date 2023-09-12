@@ -1,0 +1,29 @@
+a{
+     text-decoration: none;
+     color: inherit;
+}
+
+abbr {
+     text-decoration: none;
+}
+ul {
+     list-style: none;
+}
+button{
+     background-color: transparent;
+     border: none;
+     font-size: inherit;
+     color: inherit;
+     cursor: pointer;
+}
+
+input, textarea {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+     font-weight: 400;
+}
